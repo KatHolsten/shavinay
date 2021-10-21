@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  height: 100vh;
 }
 
 header {
@@ -82,19 +83,20 @@ h2 {
   color: #1f2937;
   margin-bottom: 32px;
 }
-
+/* find way to bring images closer together without text running into text */
 .image-section {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 52px 112px;
 }
 
 .image-section img {
   max-width: 100px;
   border: 4px solid salmon;
   border-radius: 9px;
-  padding: 12px;
+  padding: 22px;
 }
 
 .image-section div:nth-child(3) img {
@@ -103,4 +105,39 @@ h2 {
 
 .image-section div:first-child img {
   max-width: 110px;
+}
+
+.quote-section {
+  background: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-style: italic;
+  padding: 5%;
+}
+/* find way to line up h3 and p */
+.call {
+  background: #3882f6;
+  margin: 9%;
+  border-radius: 9px;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+}
+/* figure out button padding */
+.call button {
+  border: 3px solid white;
+  /* padding: 4px 24px; */
+  align-self: flex-end;
+}
+
+footer {
+  background: #1f2937;
+  color: #e5e7eb;
+  margin-top: auto;
+  text-align: center;
+  font-size: 18px;
+  padding: 42px;
 }
